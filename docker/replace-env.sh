@@ -2,7 +2,7 @@
 set -e
 
 # replace all env variables
-grep -ro '__ENV__[A-Z_]\+' /usr/local/openresty/nginx/conf/|sed s/__ENV__// | while IFS=':' read f e
+grep -ro '__ENV__[A-Z0-9_]\+' /usr/local/openresty/nginx/conf/|sed s/__ENV__// | while IFS=':' read f e
 do
     if ! v=`printenv ${e}`
     then
