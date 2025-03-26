@@ -24,5 +24,6 @@ COPY nginx/conf /usr/local/openresty/nginx/conf
 COPY replace-env.sh /
 
 COPY docker-entrypoint.sh /
+RUN chmod 700 /docker-entrypoint.sh
 
 ENTRYPOINT ["/docker-entrypoint.sh"]
