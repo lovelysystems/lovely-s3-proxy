@@ -1,7 +1,5 @@
 /.idea/
 .gradle
 *.iml
-
-# Ignore Gradle build output directory
 build
 sandbox

@@ -15,19 +15,19 @@ docker run -d \
 
 ## **Configuration Options**
 
-| Environment Variable       | Description                                      | Default      |
-|----------------------------|--------------------------------------------------|--------------|
-| `ENV_PORT`                 | The port on which the server listens             | `80`         |
-| `ENV_MGMT_PORT`            | The port on which the metrics server listens     | `10083`      |
-| `ENV_RESOLVER_ADDRESS`     | DNS resolver address for upstream requests       | `127.0.0.11` |
-| `ENV_S3_ENDPOINT`          | S3 endpoint                                      | Required     |
-| `ENV_S3_BUCKET_NAME`       | S3 bucket name                                   | Required     |
-| `ENV_S3_REGION`            | AWS region for authentication                    | Required     |
-| `ENV_S3_ACCESS_KEY_ID`     | AWS access key for signing requests              | Required     |
-| `ENV_S3_SECRET_ACCESS_KEY` | AWS secret key for signing requests              | Required     |
-| `ENV_KEY_PREFIX`           | Prefix to prepend to object keys in S3 requests  | Required     |
-| `ENV_S3_PROTOCOL`          | Protocol for S3 requests (`http` or `https`)     | `https`      |
-| `ENV_LOG_LEVEL`            | Logging level (`debug`, `info`, `warn`, `error`) | `info`       |
+| Environment Variable   | Description                                      | Default      |
+|------------------------|--------------------------------------------------|--------------|
+| `PORT`                 | The port on which the server listens             | `80`         |
+| `MGMT_PORT`            | The port on which the metrics server listens     | `10083`      |
+| `RESOLVER_ADDRESS`     | DNS resolver address for upstream requests       | `127.0.0.11` |
+| `S3_ENDPOINT`          | S3 endpoint                                      | Required     |
+| `S3_BUCKET_NAME`       | S3 bucket name                                   | Required     |
+| `S3_REGION`            | AWS region for authentication                    | Required     |
+| `S3_ACCESS_KEY_ID`     | AWS access key for signing requests              | Required     |
+| `S3_SECRET_ACCESS_KEY` | AWS secret key for signing requests              | Required     |
+| `KEY_PREFIX`           | Prefix to prepend to object keys in S3 requests. | Required     |
+| `S3_PROTOCOL`          | Protocol for S3 requests (`http` or `https`)     | `https`      |
+| `LOG_LEVEL`            | Logging level (`debug`, `info`, `warn`, `error`) | `info`       |
 
 
 ## Metrics
