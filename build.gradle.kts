@@ -12,9 +12,3 @@ lovely {
         }
     }
 }
-
-subprojects {
-    apply {
-        plugin("com.lovelysystems.gradle")
-    }
-}

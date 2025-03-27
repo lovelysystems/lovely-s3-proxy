@@ -1,4 +1,3 @@
--- /usr/local/openresty/lualib/aws_signature.lua
 local _M = {}
 local resty_sha256 = require "resty.sha256"
 local resty_hmac = require "resty.hmac"

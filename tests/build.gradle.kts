@@ -30,7 +30,6 @@ tasks.register<Exec>("dockerComposeDown") {
     commandLine("docker-compose", "down")
 }
 
-// Use JUnit5 for running tests
 tasks.test {
     useJUnitPlatform()
     dependsOn("dockerComposeUp")
