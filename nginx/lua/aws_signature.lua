@@ -32,6 +32,10 @@ function _M.hmac_sha256(key, data)
     return result
 end
 
+function _M.hmac_sha256_hex(key, data)
+    return resty_str.to_hex(_M.hmac_sha256(key, data))
+end
+
 function _M.get_signing_key(date, region, secret)
     local k_secret = "AWS4" .. secret
     local k_date = _M.hmac_sha256(k_secret, date)

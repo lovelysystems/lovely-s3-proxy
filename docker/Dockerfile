@@ -19,7 +19,7 @@ RUN apk update \
 COPY --from=builder /lua-resty-hmac /lua-resty-hmac
 
 
-#COPY nginx/lua /usr/local/openresty/nginx/lua
+COPY nginx/lua /usr/local/openresty/nginx/lua
 COPY nginx/conf /usr/local/openresty/nginx/conf
 COPY replace-env.sh /
 
