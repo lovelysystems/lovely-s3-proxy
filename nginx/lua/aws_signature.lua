@@ -33,7 +33,8 @@ function _M.hmac_sha256(key, data)
 end
 
 function _M.get_signing_key(date, region, secret)
-    local k_date = _M.hmac_sha256(secret, date)
+    local k_secret = "AWS4" .. secret
+    local k_date = _M.hmac_sha256(k_secret, date)
     local k_region = _M.hmac_sha256(k_date, region)
     local k_service = _M.hmac_sha256(k_region, "s3")
     return _M.hmac_sha256(k_service, "aws4_request")
