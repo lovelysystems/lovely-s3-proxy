@@ -1,0 +1,13 @@
+version: '3.6'
+
+services:
+  minio:
+
+  createbuckets:
+
+
+  uploader:
+
+
+  wrong_uploader:
+
