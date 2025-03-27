@@ -1,6 +1,6 @@
 #!/bin/sh
 set -e
-export LOG_LEVEL=${LOG_LEVEL:-"warn"}
+export LOG_LEVEL=${LOG_LEVEL:-"info"}
 export PORT=${PORT:-'80'}
 export MGMT_PORT=${MGMT_PORT:-'10083'}
 export RESOLVER_ADDRESS=${RESOLVER_ADDRESS:-'127.0.0.11'}  # defaults to docker internal DNS
