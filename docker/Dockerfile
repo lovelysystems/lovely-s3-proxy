@@ -5,7 +5,7 @@ RUN git clone --depth 1 --branch 0.06-1 https://github.com/jkeys089/lua-resty-hm
 
 
 FROM openresty/openresty:1.25.3.2-3-alpine
-#RUN rm -rf /usr/local/openresty/nginx/conf/*
+RUN rm -rf /usr/local/openresty/nginx/conf/*
 
 RUN apk update \
         && apk add curl perl \
