@@ -1,6 +1,12 @@
 # lovely-s3-proxy
 
-This project provides an NGINX-based reverse proxy for AWS S3 with AWS Signature Version 4 authentication. It uses openresty and lua.
+This project provides an NGINX-based reverse proxy for S3 with AWS Signature Version 4 authentication. It allows clients 
+to access a protected S3 bucket without requiring direct AWS credentials. It also prefixes the key of the objects based on
+the environment variable `KEY_PREFIX`.
+
+The body of the requests to S3 is unsigned.
+
+Currently, only PUT and DELETE requests are tested and actively used, but it should work for other HTTP methods as well.
 
 ## **Usage**
 
