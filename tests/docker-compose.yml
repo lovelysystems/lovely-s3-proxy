@@ -35,6 +35,7 @@ services:
       S3_BUCKET_NAME: upload-tests
       S3_PROTOCOL: http
       KEY_PREFIX: "foobar"
+      S3_UPSTREAM: minio:9000
       S3_ENDPOINT: minio:9000
       S3_REGION: test-region
 
@@ -50,6 +51,7 @@ services:
       S3_BUCKET_NAME: upload-tests
       S3_PROTOCOL: http
       KEY_PREFIX: "foobar"
+      S3_UPSTREAM: minio:9000
       S3_ENDPOINT: minio:9000
       S3_REGION: test-region
 
