@@ -1,0 +1,16 @@
+[versions]
+kotlin = "1.9.22"
+kotest = "5.8.0"
+ktor = "2.3.8"
+
+[libraries]
+kotest-runner = { module = "io.kotest:kotest-runner-junit5", version.ref = "kotest" }
+kotest-assertions = { module = "io.kotest:kotest-assertions-core", version.ref = "kotest" }
+kotest-framework = { module = "io.kotest:kotest-framework-engine", version.ref = "kotest" }
+
+ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor" }
+ktor-client-cio = { module = "io.ktor:ktor-client-cio", version.ref = "ktor" }
+
+[plugins]
+lovelysystems = { id = "com.lovelysystems.gradle", version = "1.15.1" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
