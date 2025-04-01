@@ -1,6 +1,6 @@
 # Changes
 
-## Unreleased
+## 2025-04-01 / 0.1.1
 
 ### Fix
 
