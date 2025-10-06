@@ -5,7 +5,7 @@ plugins {
 
 lovely {
     gitProject()
-    dockerProject("lovelysystems/lovely-s3-proxy") {
+    dockerProject("ghcr.io/lovelysystems/lovely-s3-proxy") {
         from("docker")
         into("nginx") {
             from("nginx")
