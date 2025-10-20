@@ -22,7 +22,7 @@ services:
       "
 
   uploader:
-    image: lovelysystems/lovely-s3-proxy:dev
+    image: ghcr.io/lovelysystems/lovely-s3-proxy:dev
     ports:
       - 8080:80
       - 10083:10083
@@ -39,7 +39,7 @@ services:
 
 
   wrong_uploader:
-    image: lovelysystems/lovely-s3-proxy:dev
+    image: ghcr.io/lovelysystems/lovely-s3-proxy:dev
     ports:
       - 8081:80
     environment:
