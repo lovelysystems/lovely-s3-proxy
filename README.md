@@ -16,7 +16,7 @@ It is easiest to run as a Docker container:
 docker run -d \
   -p 80:80 \
   --env-file .env \
-  lovelysystems/lovely-s3-proxy
+  ghcr.io/lovelysystems/lovely-s3-proxy:dev
 ```
 
 ## **Configuration Options**
