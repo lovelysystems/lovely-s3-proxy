@@ -1,5 +1,5 @@
-FROM bitnami/git:2.49.0 AS builder
-
+FROM ghcr.io/linuxcontainers/alpine:3.20 as builder
+RUN apk add --no-cache git
 RUN git clone --depth 1 --branch 0.06-1 https://github.com/jkeys089/lua-resty-hmac.git /lua-resty-hmac
 
 
